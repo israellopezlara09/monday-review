@@ -1,12 +1,6 @@
 # api-endpoint
-URL = "http://maps.googleapis.com/maps/api/geocode/json"
-  
-# location given here
-location = "delhi technological university"
-  
-# defining a params dict for the parameters to be sent to the API
-PARAMS = {'address':location}
-  
+URL = "http://0.0.0.0:2224/api/python?pretty=true --user jarvis:118183c729b6668877fc71c9d269ac7b13"
+
 # sending get request and saving the response as response object
 r = requests.get(url = URL, params = PARAMS)
   
