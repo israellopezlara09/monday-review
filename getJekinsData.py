@@ -1,6 +1,6 @@
-
 # importing the requests library
 import requests
+import json
 
 # api-endpoint
 URL = "https://jenkins-66e2ed6e-af76-40f4-a86b-b7cde6a06963.live.alta3.com/api/python?pretty=true"
@@ -9,5 +9,5 @@ URL = "https://jenkins-66e2ed6e-af76-40f4-a86b-b7cde6a06963.live.alta3.com/api/p
 r = requests.get(url = URL, auth = ('jarvis', 'alta3'),verify=False)
   
 # extracting data in json format
-data = r.json()
+data = json.loads(r.text)
 print(data)
